@@ -1,0 +1,17 @@
+Package: places
+Type: Package
+Title: Manage multiple paths in one place.
+Version: 0.1.0
+Authors@R: person(given  = "Jonathan",
+                 family  = "Sidi",
+                 email   = "yonis@metrumrg.com",
+                 role    = c("aut", "cre"),
+                 comment = c(ORCID = "0000-0002-4222-1819"))
+Description: Compact R6 class to manage paths
+Depends: R (>= 3.2.0)
+Imports: R6, here
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
