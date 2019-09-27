@@ -5,3 +5,4 @@
 ^_places\.yml$
 ^docs$
 ^pkgdown$
+^README\.Rmd$

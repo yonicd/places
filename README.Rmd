@@ -1,0 +1,76 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# places
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of places is to leverage [here](https://github.com/r-lib/here) to create named locations for project work.
+
+## Installation
+
+The development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("yonicd/places")
+```
+## Example
+
+
+```{r setup}
+library(places)
+```
+
+
+```{r}
+fs::dir_tree(path = '.',recurse = TRUE)
+```
+
+```{r}
+paths <- places$new(root='.')
+```
+
+```{r}
+paths$add(
+  R = 'R',
+  Vignettes ='vignettes',
+  tests='tests'
+)
+```
+
+```{r}
+paths
+```
+
+```{r}
+paths$root
+```
+
+```{r}
+paths$get('R')
+```
+```{r}
+list.files(paths$file.path('tests','testthat'))
+```
+
+```{r}
+paths$rm('R')
+```
+
+```{r}
+paths$get()
+```

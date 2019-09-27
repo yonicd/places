@@ -1,0 +1,59 @@
+---
+title: "Usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(places)
+```
+
+
+```{r}
+fs::dir_tree(path = '..',recurse = TRUE)
+```
+
+```{r}
+paths <- places$new(root='..')
+```
+
+```{r}
+paths$add(
+  R = 'R',
+  Vignettes ='vignettes',
+  tests='tests'
+)
+```
+
+```{r}
+paths
+```
+
+```{r}
+paths$root
+```
+
+```{r}
+paths$get('R')
+```
+```{r}
+list.files(paths$file.path('tests','testthat'))
+```
+
+```{r}
+paths$rm('R')
+```
+
+```{r}
+paths$get()
+```
