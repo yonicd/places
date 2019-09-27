@@ -5,26 +5,26 @@
 \alias{places-rm}
 \title{Remove a stored path}
 \usage{
-.rm(self, private, obj)
+.rm(self, private, ...)
 }
 \arguments{
 \item{self}{places self object}
 
 \item{private}{places private object}
 
-\item{\dots}{named elements to remove from storage}
+\item{\dots}{name(s) of stored path(s)}
 }
 \description{
 Remove a stored path in the places object
 }
 \examples{
- dir <- places$new()
- dir
- dir$add(back = '..',this='.')
- dir
- dir$names()
- dir$rm('back')
- dir$names()
+ paths <- places$new()
+ paths
+ paths$add(back = '..',this='.')
+ paths
+ paths$names()
+ paths$rm('back')
+ paths$names()
 }
 \seealso{
 \link[places:places]{places}

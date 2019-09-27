@@ -1,17 +1,26 @@
 Package: places
 Type: Package
-Title: Manage multiple paths in one place.
-Version: 0.1.0
+Title: Reliable Project Path Managment
+Version: 0.1.1
 Authors@R: person(given  = "Jonathan",
                  family  = "Sidi",
-                 email   = "yonis@metrumrg.com",
+                 email   = "yonicd@gmail.com",
                  role    = c("aut", "cre"),
                  comment = c(ORCID = "0000-0002-4222-1819"))
-Description: Compact R6 class to manage paths
+Description: Reliably store, manage and verify multiple file paths of a project 
+ using a simple and consistent API.
 Depends: R (>= 3.2.0)
-Imports: R6, here
+Imports: R6, here, yaml, stats
+URL: https://github.com/yonicd/places
+BugReports: https://github.com/yonicd/places/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    fs
+VignetteBuilder: knitr

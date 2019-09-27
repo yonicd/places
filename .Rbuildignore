@@ -2,5 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^_pkgdown\.yml$
+^_places\.yml$
 ^docs$
 ^pkgdown$

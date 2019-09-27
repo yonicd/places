@@ -11,6 +11,8 @@
 \item{self}{places self object}
 
 \item{private}{places private object}
+
+\item{root}{root path of the object, Default: here::here()}
 }
 \value{
 print method for the places object

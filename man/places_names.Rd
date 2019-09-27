@@ -7,14 +7,19 @@
 \usage{
 .names(self, private)
 }
+\arguments{
+\item{self}{places self object}
+
+\item{private}{places private object}
+}
 \description{
 Get names of the stored paths in the places object
 }
 \examples{
- dir <- places$new()
- dir
- dir$add(back = '..',this='.')
- dir$names()
+ paths <- places$new()
+ paths
+ paths$add(back = '..',this='.')
+ paths$names()
 }
 \seealso{
 \link[places:places]{places}

@@ -10,12 +10,16 @@ all the app logic. The class is based on the \link[R6:R6Class]{R6} OO-system and
 is thus reference-based with methods and data attached to each object, in
 contrast to the more well known S3 and S4 systems.
 }
+\details{
+If a _places.yml file exists in the root path. It will be read on initialization and
+add working paths found in the file to the stored paths.
+}
 \section{Initialization}{
 
 A new 'Places'-object is \link[places:places-init]{initialized} using the \code{new()} method on the generator:
 
 \tabular{l}{
-\code{dirs <- places$new()}
+\code{paths <- places$new()}
 }
 }
 
@@ -28,6 +32,7 @@ A new 'Places'-object is \link[places:places-init]{initialized} using the \code{
 \link[places:places-names]{$names} \tab Return the names of the stored paths \cr
 \link[places:places-rm]{$rm} \tab Remove stored paths \cr
 \link[places:places-filepath]{$filepath} \tab Construct filepaths using stored paths as the root \cr
+\link[places:places-setwd]{$setwd} \tab set working directory with a stored path \cr
 }
 }
 

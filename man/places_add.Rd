@@ -18,12 +18,13 @@
 Add or Update a stored path in the places object
 }
 \examples{
- dir <- places$new()
- dir
- dir$add(back = '..',this='.')
- dir
- dir$names()
+ paths <- places$new()
+ paths
+ paths$add(back = '..',this='.')
+ paths
+ paths$names()
 }
 \seealso{
 \link[places:places]{places}
+@importFrom stats setNames
 }

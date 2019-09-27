@@ -21,12 +21,12 @@ single name returns a character, multiple names or empty returns a list
 Get a path or a list of paths stored in places object
 }
 \examples{
- dir <- places$new()
- dir
- dir$add(back = '..',this='.')
- dir$get()
- dir$get('back')
- dir$get(c('back','this'))
+ paths <- places$new()
+ paths
+ paths$add(back = '..',this='.')
+ paths$get()
+ paths$get('back')
+ paths$get(c('back','this'))
 }
 \seealso{
 \link[places:places]{places}

@@ -22,13 +22,13 @@
 Use stored paths as the root of a file.path call
 }
 \examples{
- dir <- places$new()
- root <- basename(dir$root)
- dir$add(back = '..',this='.')
- dir$filepath('back',root)
+ paths <- places$new()
+ root <- basename(paths$root)
+ paths$add(back = '..',this='.')
+ paths$file.path('back',root)
 
  #set mustWork to FALSE to create new directories or files
- dir$filepath('back','somefile.R',mustWork = FALSE)
+ paths$file.path('back','somefile.R',mustWork = FALSE)
 }
 \seealso{
 \link[places:places]{places}
